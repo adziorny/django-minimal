@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  python:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: dziornya/django-minimal:1.0
+    container_name: acd_django_minimal
+    ports:
+      - "5800:8000"
